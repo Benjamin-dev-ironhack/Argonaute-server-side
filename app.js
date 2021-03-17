@@ -8,9 +8,6 @@ const app = express();
 
 require('./config')(app);
 
-const session = require('express-session');
-const MongoStore = require('connect-mongo').default;
-
 const allRoutes = require('./routes');
 app.use('/api', allRoutes);
 
